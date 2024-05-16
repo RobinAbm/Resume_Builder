@@ -8,15 +8,15 @@ function ResumeDisplay({ formData }) {
         <h1>{formData.Details.name}</h1>
         <p>Contact: {formData.Details.contact}</p>
         <p>Email: {formData.Details.email}</p>
-      </div>
+  </div>
 
       <section className="section">
         <h2>Educational Qualifications</h2>
         {formData.Edu.map((edu, index) => (
-          <div key={index} className="education">
+        <div key={index} className="education">
             <h3>{edu.university}</h3>
-            <p>{edu.college}</p>
-            <p>Percentage: {edu.percentage}</p>
+           <p>{edu.college}</p>
+           <p>Percentage: {edu.percentage}</p>
           </div>
         ))}
       </section>
@@ -24,11 +24,11 @@ function ResumeDisplay({ formData }) {
       <section className="section">
         <h2>Work Experience</h2>
         {formData.Work.map((work, index) => (
-          <div key={index} className="work">
+      <div key={index} className="work">
             <h3>{work.position}</h3>
-            <p>Company: {work.company}</p>
+           <p>Company: {work.company}</p>
             <p>Duration: {work.duration}</p>
-          </div>
+        </div>
         ))}
       </section>
       <div>
