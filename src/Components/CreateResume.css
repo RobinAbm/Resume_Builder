@@ -1,0 +1,63 @@
+.resume-form {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background-color: #9795959d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+   flex-direction: column;
+  gap: 20px;
+}
+
+.resume-form input {
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-resume{
+  align-self: start;
+  padding: 10px 20px;
+  background-color: #ff8400d1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-resume:hover {
+  background-color: #0056b3;
+}
+
+.button-resume-submit{
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 10rem;
+  height: 3rem;
+  margin-left: 20rem;
+}
+
+.button-resume-submit:hover{
+  background-color: #218838;
+}
+
+.button-resume-back{
+  align-self: start;
+  padding: 10px 20px;
+  background-color: #1900ffd1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 40rem;
+}
+
+.button-resume-back:hover{
+  background-color: #1900ff83;
+}
