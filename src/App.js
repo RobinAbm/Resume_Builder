@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { Route,Routes,BrowserRouter } from 'react-router-dom';
+import Homepage from './Components/Homepage';
+import CreateResume from './Components/CreateResume';
+import ResumeDisplay from './Components/ResumeDisplay';
 
 function App() {
+  const [data,setData]=useState('')
+  const getFormData=(crData)=>{
+    setData(crData)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <div> <Routes>
+        <Route path='/' element={<Homepage/>} />
+        <Route path='/newResume' element={<CreateResume getFormData={getFormData}/>}/>
+        <Route path='/Resume' element={<ResumeDisplay  formData={data} />}/>
+      </Routes></div>
+    </BrowserRouter>
+
+    // <div>
+    //   <Homepage/>
+    // </div>
   );
 }
 
