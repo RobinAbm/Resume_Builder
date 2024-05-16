@@ -1,19 +1,17 @@
-/* ResumeDisplay.css */
-
 .resume-display {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background: #fff;
+       background: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
 }
 
 .header {
-  text-align: center;
+     text-align: center;
   border-bottom: 2px solid #4CAF50;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -21,12 +19,12 @@
 
 .header h1 {
   font-size: 2.5em;
-  margin: 0;
+     margin: 0;
   color: #2c3e50;
 }
 
 .header p {
-  font-size: 1.1em;
+    font-size: 1.1em;
   margin: 5px 0;
   color: #555;
 }
@@ -59,24 +57,3 @@
   margin: 5px 0;
 }
 
-@media (max-width: 768px) {
-  .resume-display {
-    padding: 15px;
-  }
-
-  .header h1 {
-    font-size: 2em;
-  }
-
-  .header p, .education p, .work p {
-    font-size: 1em;
-  }
-
-  .section h2 {
-    font-size: 1.5em;
-  }
-
-  .education h3, .work h3 {
-    font-size: 1.2em;
-  }
-}
